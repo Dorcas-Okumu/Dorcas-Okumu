@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+	<div class="container">
+			<div class="row navigation">
+			<div class="col-md-2">
+			   <img src="images/logo.png">
+			</div>
+			<div class="col-md-10">
+				<nav class="navbar navbar-inverse">
+					  <div class="container-fluid">
+					    <ul class="nav navbar-nav">
+					      <li><a href="index.html">HOME</a></li>
+					      <li><a href="about.html">ABOUT</a></li>
+					      <li><a href="activities.html">ACTIVITIES</a></li>
+					      <li><a href="apps.html">APPS AND GAMES</a></li>
+					      <li><a href="gallery.html">GALLERY</a></li>
+					      <li><a class="home" href="contact.html">CONTACT</a></li>
+					    </ul>
+					  </div>
+				</nav>	
+			</div>
+			</div>
+			<div class="row banner">
+				<div class="col-md-12">
+					<img src="images/contactbanner.jpg" width="100%">
+				</div>
+			</div>
+		<div class="row rowcontact1">
+				<div class="col-md-12"><p id="text">Fill out the form below to learn more!</p></div>
+			</div>
+			<div class="row rowcontact2">
+				<div class="col-md-12">
+					  <form id="ajax-contact"  method="post" action="contact-form-mail.php" role="form">
+                        <div class="messages" id="form-messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone*</label>
+                                        <input id="form_phone" type="tel" name="phone"  class="form-control" placeholder="Please enter your phone*" required oninvalid="setCustomValidity('Plz enter your correct phone number ')"
+    onchange="try{setCustomValidity('')}catch(e){}">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-black" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                   <br>
+                                    <small class="text-muted"><strong>*</strong> These fields are required.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+				</div>
+			</div>
+		<div class="row row6">
+				<div class="col-md-12">
+					<img src="images/tom1.png" width="100%">
+				</div>
+			</div>
+           <div id="footer" class="row row7">
+		        <div class="col-md-8">
+		           <ul class="footer">
+				        <li><a href="index.html">.Home</a></li>
+				        <li><a href="about.html">.About</a></li>
+				        <li><a href="activities.html">.Activities</a></li>
+				        <li><a href="apps.html">.Apps & Games</a></li>
+				        <li><a href="gallery.html">.Gallery</a></li>
+				        <li><a href="contact.html">.Contact</a></li>
+		           </ul>
+		         </div>
+		        <div class="col-md-4">
+			           <p id="content4">follow us on:</p>
+		         </div>
+		        <div class="col-md-8">
+		               <p id="content3">&copy; rampage toons2017.All Rights Reserved.</p></div>
+		        <div class="col-md-4">
+		        	<div><a href="https://twitter.com/"><img src="images/twitter.jpg"></a>
+		        	<a href="https://www.google.com/"><img src="images/google.jpg"></a>
+		        	<a href="https://www.facebook.com"><img src="images/fb.jpg"></a>
+		        	<a href="https://www.youtube.com/"><img src="images/youtube.jpg"></a>
+		        	</div>
+		        </div>
+			</div>
+	</div>
+	</div>
+	</body>
+	</html>
